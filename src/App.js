@@ -40,54 +40,62 @@ function App() {
 
         <div id="1">
           <h3>제조사 및 모델</h3>
-          {parents.map((obj, index) => (
-            <div
-              key={obj.id}
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                gap: "2px",
-              }}
-            >
-              <div className="parent" id={`parent-${obj.id}`}>
-                <strong className="parent-header">{obj.nameKr}</strong>
-                <ul className="child-list">
-                  {obj.children?.models?.map((model) => (
-                    <li
-                      style={{
-                        display: "flex",
-                        gap: "2px",
-                        alignItems: "center",
-                      }}
-                      className="child"
-                      key={model.id}
-                    >
-                      {model.name}
-                      <button className="favorite-btn">
-                        {model.isFavorite === "Y" ? "⭐️" : "★"}
-                      </button>
+          <div id="parent-sortable">
+            {parents.map((obj, index) => (
+              <li
+                key={obj.id}
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  gap: "2px",
+                }}
+                className="parent ui-state-default"
+              >
+                <div id={`parent-${obj.id}`}>
+                  <div>
+                    <strong className="parent-header">{obj.nameKr}</strong>
+                    <ul id="sortable" className="child-list">
+                      {obj.children?.models?.map((model) => (
+                        <li
+                          style={{
+                            display: "flex",
+                            gap: "2px",
+                            alignItems: "center",
+                          }}
+                          className="child"
+                          key={model.id}
+                        >
+                          {model.name}
+                          <button className="favorite-btn">
+                            {model.isFavorite === "Y" ? "⭐️" : "★"}
+                          </button>
 
-                      <button className="edit-btn">✎</button>
-                      <button className="delete-btn">🗑️</button>
-                    </li>
-                  ))}
+                          <button className="edit-btn">✎</button>
+                          <button className="delete-btn">🗑️</button>
+                        </li>
+                      ))}
 
-                  <li className="add-child" data-parent={`parent-${obj.id}`}>
-                    모델을 추가하려면 클릭하세요
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <button className="favorite-btn">
-                  {obj.isFavorite === "Y" ? "⭐️" : "★"}
-                </button>
+                      <li
+                        className="add-child"
+                        data-parent={`parent-${obj.id}`}
+                      >
+                        모델을 추가하려면 클릭하세요
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <button className="favorite-btn">
+                    {obj.isFavorite === "Y" ? "⭐️" : "★"}
+                  </button>
 
-                <button className="edit-btn">✎</button>
-                <button className="delete-btn">🗑️</button>
-              </div>
-            </div>
-          ))}
-
+                  <button className="edit-btn">✎</button>
+                  <button className="delete-btn">🗑️</button>
+                </div>
+              </li>
+            ))}
+          </div>
+          {/* end  parent-sortable*/}
           <div className="add-parent-wrapper">
             <div className="add-parent-button">➕ 클릭하여 제조사 추가</div>
           </div>

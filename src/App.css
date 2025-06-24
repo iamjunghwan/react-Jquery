@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+li {
+  margin: 5px;
+  padding: 5px;
+}
+
+.ui-state-highlight {
+  height: 2.5em;
+  line-height: 1.2em;
+  border: 1px dashed #ccc;
+  background-color: #fafafa;
+}

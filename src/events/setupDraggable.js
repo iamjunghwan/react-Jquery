@@ -1,16 +1,10 @@
 import $ from "jquery";
-import "jquery-ui/ui/widgets/draggable";
+import "jquery-ui/ui/widgets/sortable";
 
 export function setupDraggable() {
-  $(".parent > ul > li.child").draggable({
-    helper: "clone",
-    revert: "invalid",
-  });
-}
-
-export function applyDraggableToNewItem($li) {
-  $li.draggable({
-    helper: "clone",
-    revert: "invalid",
+  $(".child-list").sortable({
+    revert: true,
+    items: "> li.child",
+    connectWith: ".child-list",
   });
 }

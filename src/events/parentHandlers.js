@@ -10,7 +10,7 @@ export function bindParentHandlers() {
 
       const $form = $(`
           <div class="add-parent-form">
-            <input type="text" class="new-parent-name" placeholder="제조사 이름 입력" />
+            <input type="text" class="new-parent-name" placeholder="제조사를 입력하세요" />
             <button class="confirm-add-parent">추가</button>
             <button class="cancel-add-parent">취소</button>
           </div>
@@ -43,9 +43,9 @@ export function bindParentHandlers() {
         $form.replaceWith(
           `<div class="add-parent-button">➕ 클릭하여 제조사 추가</div>`
         );
-        bindParentHandlers();
-        bindCommonHandlers();
-        bindAddChildHandlers();
+        bindParentHandlers(); // 동적으로 제조사 추가시 input,button 생성
+        bindCommonHandlers(); // 추가된 제조사 클릭시 자식 li 보여주기
+        bindAddChildHandlers(); // 추가된 제조사의 새로운 모델 추가 관련 이벤트
       });
 
       $form.find(".cancel-add-parent").on("click", function () {

@@ -1,5 +1,4 @@
 import $ from "jquery";
-import { applyDraggableToNewItem } from "./setupDraggable";
 
 export function bindAddChildHandlers() {
   $(".add-child")
@@ -21,7 +20,7 @@ export function bindAddChildHandlers() {
 
         const $newLi = $(`
           <li class="child" data-parent="${parentId}" style="display: flex; justify-content: space-between; gap: 2px">
-            <span> ${modelName} </span>
+           ${modelName} 
             <div class="actions">
               <button>★</button>
               <button>✎</button>
@@ -31,7 +30,6 @@ export function bindAddChildHandlers() {
         `);
 
         $form.before($newLi);
-        applyDraggableToNewItem($newLi);
         $form.replaceWith(
           `<li class="add-child" data-parent="${parentId}">➕ 클릭하여 모델 추가</li>`
         );
