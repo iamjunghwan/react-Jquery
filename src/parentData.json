@@ -1,0 +1,99 @@
+[
+  {
+    "insertTime": "2025-05-08T16:41:21",
+    "insertSid": 0,
+    "updateTime": "2025-06-17T09:55:10",
+    "updateSid": 0,
+    "deleteSid": null,
+    "deleteTime": null,
+    "id": 1,
+    "nameKr": "오스템",
+    "nameEn": "OSSTEM",
+    "encryptedHospitalCode": "JDQ4MTg4MSM1MSMkMSMkNCMkNzIkMzgxMzUxIzMxIyQxIyQzIyQ2MiQyNjEwMDIjNTEjJDEjJDIjJDgz",
+    "sortOrder": 999,
+    "isFavorite": "N",
+    "children": {
+      "models": [
+        { "id": 20, "name": "TSIII SA", "brandId": null, "isFavorite": "N" },
+        { "id": 21, "name": "TSIV SA", "brandId": null, "isFavorite": "Y" },
+        { "id": 22, "name": "SSIII", "brandId": null, "isFavorite": "N" },
+        { "id": 23, "name": "US", "brandId": null, "isFavorite": "N" },
+        { "id": 24, "name": "MS", "brandId": null, "isFavorite": "N" }
+      ],
+      "diameters": null,
+      "lengths": null,
+      "cementTypes": null,
+      "prosthesisTypes": null
+    }
+  },
+  {
+    "insertTime": "2025-05-08T16:41:21",
+    "insertSid": 0,
+    "updateTime": "2025-06-17T09:55:10",
+    "updateSid": 0,
+    "deleteSid": null,
+    "deleteTime": null,
+    "id": 2,
+    "nameKr": "디오",
+    "nameEn": "DIO",
+    "encryptedHospitalCode": "JDQ4MTg4MSM1MSMkMSMkNCMkNzIkMzgxMzUxIzMxIyQxIyQzIyQ2MiQyNjEwMDIjNTEjJDEjJDIjJDgz",
+    "sortOrder": 999,
+    "isFavorite": "Y123"
+  },
+  {
+    "insertTime": "2025-05-08T16:41:21",
+    "insertSid": 0,
+    "updateTime": "2025-06-17T09:55:10",
+    "updateSid": 0,
+    "deleteSid": null,
+    "deleteTime": null,
+    "id": 3,
+    "nameKr": "네오바이오텍",
+    "nameEn": "Neo Biotech",
+    "encryptedHospitalCode": "JDQ4MTg4MSM1MSMkMSMkNCMkNzIkMzgxMzUxIzMxIyQxIyQzIyQ2MiQyNjEwMDIjNTEjJDEjJDIjJDgz",
+    "sortOrder": 999,
+    "isFavorite": "N"
+  },
+  {
+    "insertTime": "2025-05-08T16:41:21",
+    "insertSid": 0,
+    "updateTime": "2025-06-17T09:55:10",
+    "updateSid": 0,
+    "deleteSid": null,
+    "deleteTime": null,
+    "id": 4,
+    "nameKr": "메가젠",
+    "nameEn": "MegaGen",
+    "encryptedHospitalCode": "JDQ4MTg4MSM1MSMkMSMkNCMkNzIkMzgxMzUxIzMxIyQxIyQzIyQ2MiQyNjEwMDIjNTEjJDEjJDIjJDgz",
+    "sortOrder": 999,
+    "isFavorite": "N"
+  },
+  {
+    "insertTime": "2025-05-08T16:41:21",
+    "insertSid": 0,
+    "updateTime": "2025-06-17T09:55:10",
+    "updateSid": 0,
+    "deleteSid": null,
+    "deleteTime": null,
+    "id": 5,
+    "nameKr": "덴티움",
+    "nameEn": "Dentium",
+    "encryptedHospitalCode": "JDQ4MTg4MSM1MSMkMSMkNCMkNzIkMzgxMzUxIzMxIyQxIyQzIyQ2MiQyNjEwMDIjNTEjJDEjJDIjJDgz",
+    "sortOrder": 999,
+    "isFavorite": "N"
+  },
+  {
+    "insertTime": "2025-05-08T16:41:21",
+    "insertSid": 0,
+    "updateTime": "2025-06-17T09:55:11",
+    "updateSid": 0,
+    "deleteSid": null,
+    "deleteTime": null,
+    "id": 6,
+    "nameKr": "포인트",
+    "nameEn": "Point Implant",
+    "encryptedHospitalCode": "JDQ4MTg4MSM1MSMkMSMkNCMkNzIkMzgxMzUxIzMxIyQxIyQzIyQ2MiQyNjEwMDIjNTEjJDEjJDIjJDgz",
+    "sortOrder": 999,
+    "isFavorite": "N"
+  }
+]

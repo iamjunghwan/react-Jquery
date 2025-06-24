@@ -1,0 +1,13 @@
+{
+  "models": [
+    { "id": 20, "name": "TSIII SA", "brandId": null },
+    { "id": 21, "name": "TSIV SA", "brandId": null },
+    { "id": 22, "name": "SSIII", "brandId": null },
+    { "id": 23, "name": "US", "brandId": null },
+    { "id": 24, "name": "MS", "brandId": null }
+  ],
+  "diameters": null,
+  "lengths": null,
+  "cementTypes": null,
+  "prosthesisTypes": null
+}
